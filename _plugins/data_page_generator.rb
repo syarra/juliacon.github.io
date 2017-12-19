@@ -116,6 +116,7 @@ module Jekyll
     # need to generate the links by hand
     def datapage_url(input, dir)
       extension = Jekyll.configuration({})['page_gen-dirs'] ? '/' : '.html'
+      puts "#{input}"
       "#{dir}/#{sanitize_filename(input)}#{extension}"
     end
   end

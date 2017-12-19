@@ -1,0 +1,7 @@
+---
+layout: default2018
+---
+{% assign img_folder = "assets/img" %}
+{% assign talks = site.data.2018_talks_workshops | where:'type', 'lightning_talk' %}
+
+{% include talks_content.html %}
